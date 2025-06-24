@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cms-backend
+    env: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://jaysuthar3103:Jayu@4927@collage-management.xq0ufd9.mongodb.net/College-Management-System?retryWrites=true&w=majority
+      - key: PORT
+        value: 5000
+      - key: FRONTEND_API_LINK
+        value: https://college-management-system-lilac.vercel.app
