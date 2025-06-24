@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://your-backend-url.onrender.com/api/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/backend",
+      "destination": "https://your-backend-url.onrender.com",
+      "permanent": true
+    }
+  ]
+}
